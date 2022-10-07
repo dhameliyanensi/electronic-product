@@ -1,0 +1,418 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.flex
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+a
+{
+  text-decoration: none!important;
+}
+img
+{
+  width: 100%;
+  height: 100%;
+}
+/* --------------------start slider sec------------------ */
+.banner
+{
+  position: relative;
+}
+.banner_cont
+{
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+.color
+{
+  color: red;
+}
+/* --------------------end slider sec------------------ */
+/* ----------------start navbar sec------------------ */
+.ul li {
+  padding: 0px 10px;
+  font-size: 15px;
+}
+
+.main li a {
+  padding: 10px 10px;
+  display: block;
+  color: #272727;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.main li {
+  position: relative;
+}
+
+.main li:hover>a {
+  color: #FFBC06 !important;
+}
+
+.main li a i {
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+.icon li a i {
+  padding: 7px 14px;
+  color: #272727;
+  font-size: 10px;
+}
+
+.main li {
+  padding-left: 25px;
+}
+
+.main li .service {
+  padding-left: 5px;
+}
+
+.sub {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: .5s;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  width: 200px;
+  box-shadow: 2px 2px 15px gray;
+  z-index: 1;
+}
+
+.sub li {
+  display: block;
+}
+
+.sub li a {
+  color: #272727;
+  padding: 5px 10px;
+  transition: .5s;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.main li:hover .sub {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.sub li a:hover {
+  color: #f5a96e;
+  padding-left: 30px;
+}
+/* -----------------------end navbar sec----------------- */
+/* -----------------start freedom sec---------------- */
+.box
+{
+  
+  margin: 0px 5px 15px 5px;
+  text-align: center;
+  padding: 7%;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+.sam1
+{
+  position: relative;
+  transform: scale(0.9);
+  transition: .5s ease;
+}
+.sam1:hover{
+  transform: scale(1);
+}
+.btn1
+{
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 50px;
+  right: 250px;
+  padding: 10px;
+  opacity: 0;
+  border-radius: 50px;
+  transition: .5s ease-in-out;
+}
+.sam1:hover .btn1
+{
+  opacity: 1;
+}
+.sam2
+{
+  transform: scale(0.9);
+  transition: .5s ease;
+}
+.sam2:hover
+{
+  transform: scale(1);
+}
+.btn2
+{
+  background-color: black;
+  color: white;
+  padding: 7px 15px;
+  opacity: 0;
+  bottom: 1px;
+  margin-top: 10px;
+  border-radius: 50px;
+  transition: .5s ease-in-out;
+}
+.sam2:hover .btn2
+{
+  opacity: 1;
+}
+/* -----------------end freedom sec---------------- */
+/* start speaker sec--------------------  */
+.speaker
+{
+  transition: .5s ease-out;
+}
+.speaker:hover
+{
+  transform: rotatey(-25deg);
+}
+/* end speaker sec--------------------  */
+/* ---------------start tech news sec-------------- */
+.btn
+{
+  background-color: red!important;
+  color: white!important;
+  border: none!important;
+}
+.gadgets a
+{
+  color: black!important;
+}
+.gadgets{
+  padding: 10px 60px 20px 20px;
+  line-height: 30px;
+}
+.zoom
+{
+  transform: scale(0.9);
+  transition: 1s ease-out;
+}
+.zoom:hover
+{
+  transform: scale(1);
+}
+/* ---------------end tech news sec-------------- */
+/* ---------------start service sec-------------- */
+.bg_color
+{
+  background-color: #BFE23D;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  margin-bottom: 80px;
+  height: auto;
+  text-align: center;
+  width: 100%;
+}
+.circle
+{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+}
+.icon1
+{
+  color: white;
+  font-size: 35px;
+}
+/* ---------------end service sec-------------- */
+/* ------------start home appliance sec----------------- */
+.bg_image
+{
+  position: relative;
+}
+.appliance
+{
+  position: absolute;
+  top: 5%;
+  left: 40%;
+}
+h1{
+  text-align: center!important;
+}
+.al
+{
+  position: absolute;
+  bottom: 10%;
+  left: 42%;
+ 
+}
+.btn3
+{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 50px;
+}
+/* ------------end home appliance sec----------------- */
+.image{
+  transition: .2s ease-in-out;
+}
+.card:hover .image
+{
+  transform: scale(.97);
+}
+.card:hover .circle1{
+  opacity: 1;
+}
+.yellow {
+  color: #fd7e14;
+  font-size: 12px;
+}
+.circle1 {
+  width: 30px;
+  height: 30px;
+  margin-left: 12px;
+  border-radius: 50%;
+  border: 1px solid navy;
+  background: navy;
+  opacity: 0;
+  transition: .5s ease-out;
+}
+
+.circle1 i {
+  color:white;
+  margin: 7px;
+  font-size: 12px;
+}
+
+.c1 i+i {
+  margin-left: 20%;
+}
+
+.icon {
+  margin-left: 35%;
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+.image
+{
+  position: relative;
+}
+.c1 {
+  padding: 0px 30px;
+  position: absolute;
+  bottom:100px;
+  left: 25px;
+}
+h6,h3,p,h2,h1
+{
+  text-align: center;
+}
+/* -------------------start latest product---------------- */
+.nav1 a
+{
+  border: 2px solid #023059!important;
+  padding: 5px 15px;
+   /* min-width: 82px; */
+   margin-left: 15px; 
+  text-align: center;
+  color: black;
+}
+.flex1 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all
+{
+  color: white!important;
+  background-color: #023059;
+}
+.blue
+{
+  transition: .5s ease-in-out;
+  transform: scale(.9);
+}
+.blue:hover
+{
+  transform:scale(1);
+}
+.p
+{
+  font-weight: 500;
+}
+.round img
+{
+  border-radius: 50%;
+  width: 100%;
+  transition: .5s ease-out;
+}
+.round:hover img
+{
+  transform: rotate(45deg);
+}
+
+/* -------------------end latest product---------------- */
+/* ----------------start footer sec-------------------- */
+.footer {
+  width: 100%;
+  height: auto;
+  background: #BFE23D;
+  margin-top: 100px;
+  /* color: white !important; */
+  font-size: 15px;
+}
+.footer span {
+  color: black !important;
+  /* font-size: 14px; */
+}
+
+.padding {
+  padding: 60px 100px;
+}
+
+.footer-menu li {
+  padding: 5px;
+}
+
+.form {
+  padding: 10px 30px;
+  text-align: center;
+}
+.submit
+{
+  margin-top: 20px;
+  padding: 7px 15px;
+}
+.flex2 .circle_f
+{
+  float: left;
+}
+.padd_in
+{
+  padding: 0px 40px;
+}
+.circle_f
+{
+  /* color: #f6f6f6; */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 25px;
+  margin-left: 20px;
+}
+/* --------------------end footer sec------------------- */
