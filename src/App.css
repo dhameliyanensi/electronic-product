@@ -234,7 +234,7 @@ img
 }
 /* ---------------end service sec-------------- */
 /* ------------start home appliance sec----------------- */
-.bg_image
+/* .bg_image
 {
   position: relative;
 }
@@ -261,6 +261,19 @@ h1{
   border: none;
   padding: 7px 20px;
   border-radius: 50px;
+} */
+.app
+{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* ------------end home appliance sec----------------- */
 .image{

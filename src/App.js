@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 import './css/all.min.css';
-import React, { useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { AiFillQqCircle } from "react-icons/ai";
 import Aos from 'aos';
 import "aos/dist/aos.css";
@@ -26,7 +26,7 @@ function App() {
   useEffect(() => {
     Aos.init({ duration: 3000, offset: 250 });
   }, []);
-  
+
   return (
     <div className='App'>
       {/* ----------------------start header sec----------------------- */}
@@ -68,55 +68,7 @@ function App() {
         <div className="container">
           <div className="row mt-3">
             <div className="col-lg-8 col-xs-12">
-              {/* <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src={require('./image/s1.jpg')} style={{ width: "100%" }} alt="" />
 
-                    <div class="container">
-                      <div class="carousel-caption text-start">
-                        <h1></h1>
-                        <p></p>
-                        <p><a href="#"></a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src={require('./image/s2.jpg')} style={{ width: "100%" }} alt="" />
-
-                    <div class="container">
-                      <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Some representative placeholder content for the second slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src={require('./image/s3.jpg')} style={{ width: "100%" }} alt="" />
-                    <div class="container">
-                      <div class="carousel-caption text-end">
-                        <h1>One more for good measure.</h1>
-                        <p>Some representative placeholder content for the third slide of this carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div> */}
               <Carousel variant="dark" >
                 <Carousel.Item className='slid'>
                   <img
@@ -514,26 +466,12 @@ function App() {
       {/* -----------end feature product sec----------------- */}
       {/* -------------start home appliance sec--------------- */}
       <section>
-        <div className="row">
-          <div data-aos="fade-left" className="col">
-            <div className="bg_image">
-              <a href="">
-                <img src={require('./image/home.jpg')} style={{ width: "100%" }} alt="" />
-              </a>
-              <div className="appliance">
-                <h1>HOME APPLIANCES</h1>
-              </div>
-              <div className="al">
-                <h2>
-                  AI Ecobubble™
-                </h2>
-                <p>Simple. Gentle. Intelligent wash.<br></br>Up to 20% cashback | EMI starting at ₹ 990</p>
-                <a href="">
-                  <button className='btn3'>BUY NOW</button>
-                </a>
-              </div>
-            </div>
+        <div className='app'>
+          <img src={require('./image/home.jpg')} alt="" style={{width:"100%"}}></img>
+          <div class="centered">
+            <h1>Home Appliances</h1>
           </div>
+          
         </div>
       </section>
       {/* -------------end home appliance sec--------------- */}
